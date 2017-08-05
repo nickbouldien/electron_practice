@@ -5,15 +5,42 @@
     <title>Hello World!</title>
   </head>
   <body>
+		<div class="sidenav">
+		  <ul>
+		    <li id="whoAmI">Who am I</li>
+		    <li id="whatIsElectron">What is Electron</li>
+		    <li id="install">Lets get started</li>
+		    <li id="challenge">Challenge</li>
+		    <li id="gotchas">Some Gotchas that Got me</li>
+		  </ul>
+		</div>
+
     <h1>Hello World!</h1>
     <!-- All of the Node.js APIs are available in this renderer process. -->
     We are using Node.js <script>document.write(process.versions.node)</script>,
     Chromium <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.
+
+		<a href="#">Nick's website</a>
+
+
+	</br>
+	</br>
+		<button id="clickme">Click here</button>
+	</br>
+		<button id="newTab">new tab</button>
+
+		<input type="image" style="padding: 0 2em;"
+		src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-github-3.png&r=58&g=32&b=110"
+		width="35px" onClick="shell.openExternal('https://github.com/nickbouldien')"
+		>
+		<a href="#" onclick="shell.openExternal('http://wealljs.org')">WeAllJs.org</a>
+
   </body>
 
   <script>
     // You can also require other files to run in this process
     require('./renderer.js')
+		require('./other.js')
   </script>
 </html>
